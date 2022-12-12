@@ -1,0 +1,35 @@
+.specialisation{
+    margin-top: 70px;
+}
+.specialisation_content-block__wrap{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.spec-block__wrap{
+    width: 20%;
+    height: 270px;
+    background-image: url('./images/specialisation imgs/spec1.png'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+}
+
+.spec-block_text__wrap{
+    /* color: #fff; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

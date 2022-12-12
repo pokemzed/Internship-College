@@ -1,0 +1,71 @@
+.main{
+    width: 100%;
+    background-color: var(--back-color);
+}
+
+/* Стилизация шапки */
+.logo-header_tablet-mobile{
+    display: none;
+}
+.header-burger_menu{
+    display: none;
+}
+
+.header{
+    padding: 50px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-header__wrap ul{
+    display: flex;
+}
+.nav-header__wrap ul li:not(:last-child){
+    margin-right: 50px;
+}
+.link-header{
+    color: var(--text-color);
+    transition: .3s;
+}
+.link-header:hover{
+    color: #4040E4;
+}
+
+.massage-to-moder{
+    border: none;
+    background-color: var(--elements-color);
+    padding: 15px 40px;
+
+    display: flex;
+    align-items: center;
+
+    color: #fff;
+    border-radius: 20px 0 20px 0;
+
+    cursor: pointer;
+    transition: .3s;
+}
+.massage-to-moder img{
+    margin-right: 10px;
+}
+.massage-to-moder:hover{
+    background-color: #4040E4;
+}
+.massage-tablet{
+    display: none;
+}
+
+
+/* Стилизация информационного блока */
+.info-main__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.info-main_text__wrap{
+    width: 60%;
+    padding: 0 0 50px 0;
+}

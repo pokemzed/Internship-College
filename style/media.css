@@ -1,0 +1,183 @@
+/* Отступы сетки по бокам */
+@media (max-width: 1600px) and (min-width: 400px){
+    .grid {
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 399px) and (min-width: 300px){
+    .grid {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+
+/* Portrait tablets and medium desktops */
+@media (max-width: 1335px){
+    body{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--text-color);
+    }
+    
+    h1{
+        font-size: 32px;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    h3{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    h4{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 600; 
+    }
+    span{
+        font-size: 12px;
+        font-weight: 600; 
+    }
+
+
+    /* Стилизация шапки */
+    .logo-header{
+        display: none;
+    }
+    .logo-header_tablet-mobile{
+        display: block;
+    }
+
+    .nav-header__wrap ul li:not(:last-child){
+        margin-right: 35px;
+    }
+
+    .massage-tablet{
+        display: block;
+    }
+    .massage-to-moder{
+        display: none;
+    }
+    .info-main_text__wrap{
+        width: 100%;
+        
+    }
+    .info-main_image__wrap{
+        display: none;
+    }
+
+    /* Стилизация специлизаций */
+    .spec-block__wrap{
+        width: 43%;
+    }
+
+    /* Стилизация галереи */
+    .slider-image{
+        width: 100%;
+    }
+    .slider{
+        width: 100%;
+        margin: 100px 0;
+        padding: 0;
+    
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .slider_text-controls__wrap{
+        margin: 0;
+    }
+
+    /* Стилизация отзывов */
+    .reviews{
+        justify-content: center;
+    }
+    .review-desktop{
+        display: none;
+    }
+    .review-control-tablet-mobile__wrap{
+        display: block;
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .review-control-tablet-mobile__wrap .review-back{
+        margin-right: 30px;
+    }
+    .review__wrap{
+        width: 100%;
+    }
+
+    /* Стилизация подвала */
+    .footer-text__wrap{
+        width: 70%;
+    }
+}
+
+
+/* Portrait tablets and small desktops */
+@media (max-width: 990px) {
+    /* Стилизация специлизаций */
+    .spec-block__wrap{
+        width: 100%;
+    }
+}
+
+
+
+/* Landscape phones and smaller */
+@media (min-width: 320px) and (max-width: 670px){
+    body{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--text-color);
+    }
+    
+    h1{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    h3{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    h4{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    p{
+        font-size: 12px;
+        font-weight: 600; 
+    }
+    span{
+        font-size: 10px;
+        font-weight: 600; 
+    }
+
+
+    /* Стилизация шапки */
+    .nav-header__wrap{
+        display: none;
+    }
+    .massage-tablet{
+        display: none;
+    }
+    .header-burger_menu{
+        display: block;
+        cursor: pointer;
+    }
+}
