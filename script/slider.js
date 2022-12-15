@@ -1,11 +1,10 @@
 const firstVariationSlider = () => {
     //Находим элементы страницы
-    const container = document.querySelector('.slider')
-    const btnBack = document.querySelector('.slider-back')
-    const btnNext = document.querySelector('.slider-next')
-    const sliderName = document.querySelector('.slider_text__wrap h1')
-    const sliderText = document.querySelector('.slider_text__wrap h3')
-    const sliderImage = document.querySelector('.slider-image')
+    const btnBack = document.querySelector('.galery-button-back')
+    const btnNext = document.querySelector('.galery-button-next')
+    const sliderName = document.querySelector('.galery-content-title__wrap h1')
+    const sliderText = document.querySelector('.galery-content-title__wrap p')
+    const sliderImage = document.querySelector('.galery-image__wrap')
 
     //Определяем первый слайд
     let count = 0
