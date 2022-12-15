@@ -7,41 +7,31 @@
     <!-- Подключение шрифта -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./style/cleaning.css">
-    <link rel="stylesheet" href="./style/foundation.css">
-    <!-- Стили компонентов -->
+    <!-- Подключение основных стилей -->
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/main-style.css">
+
+    <!-- Подключение компонентов -->
     <link rel="stylesheet" href="./style/components/main.css">
-    <link rel="stylesheet" href="./style/components/specialisation.css">
-    <link rel="stylesheet" href="./style/components/slider.css">
+    <link rel="stylesheet" href="./style/components/galery.css">
+    <link rel="stylesheet" href="./style/components/spec.css">
     <link rel="stylesheet" href="./style/components/form.css">
-    <link rel="stylesheet" href="./style/components/review.css">
+    <link rel="stylesheet" href="./style/components/reviews.css">
     <link rel="stylesheet" href="./style/components/footer.css">
 
-    <!-- MEDIA -->
+    <!-- Подключение медиа -->
     <link rel="stylesheet" href="./style/media.css">
 
-    <!-- Поключение Favicon -->
-    <link rel="icon" href="./images/fav/favicon.png">
     <title>3D Freelance</title>
 </head>
 <body>
-    <div class="main">
+    <main class="main">
         <div class="grid">
             <header class="header">
-                <div class="logo-header">
-                    <img src="./images/logo-header.svg" alt="">
-                </div>
-                <div class="logo-header_tablet-mobile">
-                    <img src="./images/logo-tablet-mobile.svg" alt="">
-                </div>
-
-                <div class="header-burger_menu">
-                    <img src="./images/burger.svg" alt="">
-                </div>
-
-                <div class="nav-header__wrap">
+                <img src="./images/logo.svg" alt="">
+                <div class="nav">
                     <ul>
                         <li><a class="link-header" href="#">Типы проектов</a></li>
                         <li><a class="link-header" href="#">Портфолио</a></li>
@@ -50,134 +40,161 @@
                         <li><a class="link-header" href="#">Контакты</a></li>
                     </ul>
                 </div>
-                <button class="massage-to-moder"><img src="./images/massage.svg"/> Связаться с модератором</button>
-                <img src="./images/massage-tablet.svg" class="massage-tablet" alt="">
             </header>
-
-            <main class="info-main__wrap">
-                <div class="info-main_text__wrap">
-                    <h1>Привет!</h1>
-                    <p>
-                        Приветствуем Вас на сайте для независимых специалистов (Фрилансеров) и Работодателей, ищущих удаленных работников в интернете. <br><br>
-                        На нашем сайте для Фрилансеров - актуальные предложения удаленной работы, возможность разместить уже выполненные работы в портфолио, добавить объявления о предоставляемых услугах. <br><br>
-                        Для Работодателей - возможность быстро и легко найти Фрилансера, готового решить как разовую задачу, так и подключиться к долгосрочному проекту
-                    </p>
+            <div class="info-main__wrap">
+                <div class="info-main-text__wrap">
+                    <div class="info-main_title__wrap">
+                        <h3>3D Freelance</h3>
+                        <h1>Привет!</h1>
+                    </div>
+                    <div class="info-main_card__wrap">
+                        <div class="info-main_card_quotes"><h2>"</h2></div>
+                        <p>На нашем сайте для Фрилансеров - актуальные предложения удаленной работы, возможность разместить уже выполненные работы в портфолио, добавить объявления о предоставляемых услугах.</p>
+                    </div>
+                    <div class="button-main">
+                        <button id="button-maneger" class="button">СВЯЗАТЬСЯ С МОДЕРАТОРОМ</button>
+                    </div>
                 </div>
-                <div class="info-main_image__wrap">
-                    <img src="./images/main-image.png" alt="">
+                <div class="info-main-image__wrap">
+                    <img src="./images/main-image.svg" alt="">
                 </div>
-            </main>
-        </div>
-    </div>
-
-    <div class="grid">
-        <div class="specialisation">
-            <h1>Наши специализации</h1>
-            <div class="specialisation_content-block__wrap">
-                <!-- JS -->
             </div>
         </div>
-    </div>
+    </main>
 
     <div class="grid">
-        <div class="slider">
-            <img src="./images/slider-image.png" alt="" class="slider-image">
-            <div class="slider_text-controls__wrap">
-                <div class="slider_text__wrap">
-                    <h1>Владимир Иорданский</h1>
-                    <h3>
+        <div class="galery__wrap">
+            <img src="./images/slider imgs/slider-image.png" alt="" class="galery-image__wrap">
+            <div class="galery-content__wrap">
+                <div class="galery-content-title__wrap">
+                    <h1>
+                        Владимир <br>
+                        Иорданский
+                    </h1>
+                    <p>
                         Москва, 3D графика <br>
                         Работ в портфолио: 372
-                    </h3>
+                    </p>
                 </div>
-                <div class="slider_controls__wrap">
-                    <img src="./images/back.svg" alt="" class="slider-back slider-button">
-                    <img src="./images/next.svg" alt="" class="slider-next slider-button">
+                <div class="galery-content-control__wrap">
+                    <div class="galery-button-back__wrap">
+                        <img src="./images/galery-back.svg" alt="" class="galery-button-back galery-button">
+                        <!-- <div class="circle"></div> -->
+                    </div>
+                    <div class="galery-button-next__wrap"> 
+                        <img src="./images/galery-next.svg" alt="" class="galery-button-next galery-button">
+                        <!-- <div class="circle"></div> -->
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="form">
+    <div class="specialisation">
         <div class="grid">
-            <div class="form__wrapper">
-                <h1>Форма заявки на выполнение работы</h1>
-                <form>
-                    <div class="form__wrap form-element">
-                        <h4>Форма работы</h4>
-                        <select id="form_form">
-                            <option value="Дистанционно">Дистанционно</option>
-                            <option value="В офисе">В офисе</option>
-                        </select>
-                    </div>
-                    <div class="form_category__wrap form-element">
-                        <h4>Форма работы</h4>
-                        <input type="text" class="form_category form-input-element" placeholder="Введите название категории для вашего проекта">
-                    </div>
-                    <div class="form_name__wrap form-element">
-                        <h4>Название</h4>
-                        <input type="text" class="form_name form-input-element" placeholder="Придумайте название вашего задания">
-                    </div>
-                    <div class="form_about__wrap form-element">
-                        <h4>Описание задания</h4>
-                        <input type="text" class="form_about form-input-element" placeholder="Опишите подробно то, что необходимо сделать в рамках данного проекта">
-                    </div>
-                    <div class="form_vazhno__wrap form-element">
-                        <h4>Обязательные требования</h4>
-                        <input type="text" class="form_vazhno form-input-element" placeholder="Напишите обязательные требования, которым должна соответствовать работа">
-                    </div>
-                    <div class="form_money__wrap form-element">
-                        <h4>Бюджет проекта</h4>
-                        <input type="text" class="form_money form-input-element" placeholder="Введите сумму бюджета проекта в рублях">
-                    </div>
-                    <div class="form_time__wrap form-element">
-                        <h4>Максимальный срок выполнения</h4>
-                        <input type="text" class="form_time form-input-element" placeholder="Введите количество дней">
-                    </div>
-                    <div class="form_pay__wrap form-element">
-                        <h4>Варианты оплаты</h4>
-                        <select id="form_pay">
-                            <option value="Без предоплаты">Без предоплаты</option>
-                            <option value="Возможна предоплата">Возможна предоплата</option>
-                            <option value="Безопасная сделка">Безопасная сделка</option>
-                            <option value="Заключение договора">Заключение договора</option>
-                        </select>
-                    </div>
-                    <button id="button-form">Отправить</button>
-                </form>
+            <div class="specialisation-content__wrap">
+                <div class="specialisation-title__wrap">
+                    <h3>Specialisation</h3>
+                    <h1>Наши специализации</h1>
+                </div>
+                <div class="spspecialisationec-cards__wrap">
+
+                </div>
             </div>
+        </div>
+        <!-- <div class="element-back"></div> -->
+    </div>
+
+    <div class="grid">
+        <div class="form">
+            <div class="form-title">
+                <h3>Form</h3>
+                <h1>Заполните заявку</h1>
+            </div>
+            <form>
+                <div class="form__wrap form-element">
+                    <h4>Форма работы</h4>
+                    <select id="form_form">
+                        <option value="Дистанционно">Дистанционно</option>
+                        <option value="В офисе">В офисе</option>
+                    </select>
+                </div>
+                <div class="form_category__wrap form-element">
+                    <h4>Форма работы</h4>
+                    <input type="text" class="form_category form-input-element" placeholder="Введите название категории для вашего проекта">
+                </div>
+                <div class="form_name__wrap form-element">
+                    <h4>Название</h4>
+                    <input type="text" class="form_name form-input-element" placeholder="Придумайте название вашего задания">
+                </div>
+                <div class="form_about__wrap form-element">
+                    <h4>Описание задания</h4>
+                    <input type="text" class="form_about form-input-element" placeholder="Опишите подробно то, что необходимо сделать в рамках данного проекта">
+                </div>
+                <div class="form_vazhno__wrap form-element">
+                    <h4>Обязательные требования</h4>
+                    <input type="text" class="form_vazhno form-input-element" placeholder="Напишите обязательные требования, которым должна соответствовать работа">
+                </div>
+                <div class="form_money__wrap form-element">
+                    <h4>Бюджет проекта</h4>
+                    <input type="text" class="form_money form-input-element" placeholder="Введите сумму бюджета проекта в рублях">
+                </div>
+                <div class="form_time__wrap form-element">
+                    <h4>Максимальный срок выполнения</h4>
+                    <input type="text" class="form_time form-input-element" placeholder="Введите количество дней">
+                </div>
+                <div class="form_pay__wrap form-element">
+                    <h4>Варианты оплаты</h4>
+                    <select id="form_pay">
+                        <option value="Без предоплаты">Без предоплаты</option>
+                        <option value="Возможна предоплата">Возможна предоплата</option>
+                        <option value="Безопасная сделка">Безопасная сделка</option>
+                        <option value="Заключение договора">Заключение договора</option>
+                    </select>
+                </div>
+                <button id="button-form">Отправить</button>
+            </form>
         </div>
     </div>
 
     <div class="grid">
         <div class="reviews">
-            <img src="./images/review-back.svg" class="review-back review-control review-desktop" alt="">
-            <div class="review__wrap">
-                <!-- JS -->
+            <div class="reviews-title__wrap">
+                <h3>Reviews</h3>
+                <h1>Наши отзывы</h1>
             </div>
-            <div class="review-control-tablet-mobile__wrap">
-                <img src="./images/review-back.svg" class="review-back review-control" alt="">
-                <img src="./images/review-next.svg" class="review-next review-control" alt="">
+            <div class="reviews-content__wrap">
+                <div class="first-review__wrap">
+                    <span>Игорь выполнил заказ точно в срок, 3D модель и рендер очень хорошо проработаны. Спасибо за работу.</span>
+                    <div class="footer-review">
+                        <h2>Игорь 26 лет</h2>
+                        <p>Фрилансер для 3D моделирования</p>
+                    </div>
+                </div>
+                <div class="second-review__wrap">
+                    <span>Игорь выполнил заказ точно в срок, 3D модель и рендер очень хорошо проработаны. Спасибо за работу.</span>
+                    <div class="footer-review">
+                        <h2>Игорь 26 лет</h2>
+                        <p>Фрилансер для 3D моделирования</p>
+                    </div>
+                </div>
             </div>
-            <img src="./images/review-next.svg" class="review-next review-control review-desktop" alt="">
         </div>
     </div>
 
     <div class="footer">
         <div class="grid">
-            <div class="footer-text__wrap">
-                <h3>Звоните нам ежедневно с 9:00 до 22:00:
-                    в Москве 8 (495) 969 09 63, в Санкт-Петербурге 8 (812) 986 95 29</h3>
-                <h4>© 2012—2019 3D-Фриланс</h4>
+            <div class="footer-title__wrap">
+                <h3>© 2012—2019 3D-Фриланс</h3>
+                <span>Звоните нам ежедневно с 9:00 до 22:00:
+                    в Москве 8 (495) 969 09 63, в Санкт-Петербурге 8 (812) 986 95 29</span>
             </div>
         </div>
     </div>
 
-    
-    <script src="./script/slider.js"></script>
-    <script src="./script/specialisation.js"></script>
-    <script src="./script/reviews.js"></script>
-    <script src="./script/form.js"></script>
 
+    <script src="./script/spec.js"></script>
+    <script src="./script/slider.js"></script>
 </body>
 </html>

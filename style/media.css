@@ -1,3 +1,4 @@
+
 /* Отступы сетки по бокам */
 @media (max-width: 1600px) and (min-width: 400px){
     .grid {
@@ -15,169 +16,113 @@
 
 /* Portrait tablets and medium desktops */
 @media (max-width: 1335px){
-    body{
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 14px;
-        font-weight: 600;
-        color: var(--text-color);
-    }
-    
-    h1{
-        font-size: 32px;
-        font-weight: 600;
-    }
-    h2{
-        font-size: 20px;
-        font-weight: 400;
-    }
-    h3{
-        font-size: 14px;
-        font-weight: 600;
-    }
-    h4{
-        font-size: 14px;
-        font-weight: 400;
-    }
-    p{
-        font-size: 14px;
-        font-weight: 600; 
-    }
-    span{
-        font-size: 12px;
-        font-weight: 600; 
-    }
 
-
-    /* Стилизация шапки */
-    .logo-header{
-        display: none;
-    }
-    .logo-header_tablet-mobile{
-        display: block;
-    }
-
-    .nav-header__wrap ul li:not(:last-child){
-        margin-right: 35px;
-    }
-
-    .massage-tablet{
-        display: block;
-    }
-    .massage-to-moder{
-        display: none;
-    }
-    .info-main_text__wrap{
-        width: 100%;
-        
-    }
-    .info-main_image__wrap{
-        display: none;
-    }
-
-    /* Стилизация специлизаций */
-    .spec-block__wrap{
-        width: 43%;
-    }
-
-    /* Стилизация галереи */
-    .slider-image{
-        width: 100%;
-    }
-    .slider{
-        width: 100%;
-        margin: 100px 0;
-        padding: 0;
-    
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .slider_text-controls__wrap{
-        margin: 0;
-    }
-
-    /* Стилизация отзывов */
-    .reviews{
-        justify-content: center;
-    }
-    .review-desktop{
-        display: none;
-    }
-    .review-control-tablet-mobile__wrap{
-        display: block;
-        display: flex;
-        align-items: center;
-        margin-top: 40px;
-    }
-    .review-control-tablet-mobile__wrap .review-back{
-        margin-right: 30px;
-    }
-    .review__wrap{
-        width: 100%;
-    }
-
-    /* Стилизация подвала */
-    .footer-text__wrap{
-        width: 70%;
-    }
 }
 
 
 /* Portrait tablets and small desktops */
 @media (max-width: 990px) {
-    /* Стилизация специлизаций */
-    .spec-block__wrap{
+    .main{
+        background-image: none;
+        height: 100%;
+    }
+    .header{
+        padding: 50px 0 0 0;
+    }
+    .info-main-image__wrap{
+        display: none;
+    }
+    .info-main-text__wrap{
         width: 100%;
     }
+    .info-main_card__wrap{
+        width: 70%;
+    }
+    .nav{
+        display: none;
+    }
+
+    .galery-image__wrap{
+        width: 100%;
+    }
+    .galery-content__wrap{
+        margin-top: 30px;
+    }
+    .galery__wrap{
+        margin: 30px 0 80px 0;
+    }
+
+    .specialisation-card{
+        width: 48%;
+        height: 200px;
+    }
+    
+    .second-review__wrap{
+        width: 100%;
+    }
+    .first-review__wrap{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer-title__wrap{
+        width: 100%;
+    }
+    
 }
 
 
 
 /* Landscape phones and smaller */
-@media (min-width: 320px) and (max-width: 670px){
+@media (min-width: 150px) and (max-width: 670px){
+    .specialisation-card{
+        width: 100%;
+        height: 200px;
+    }
+
     body{
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 14px;
-        font-weight: 600;
-        color: var(--text-color);
+        font-size: 12px;
+    
+        /* Отключаем выделение на сайте */
+        -moz-user-select: none;
+        -webkit-user-select: none;
     }
     
     h1{
-        font-size: 24px;
-        font-weight: 600;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 30px;
+        margin: 0;
     }
     h2{
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
     }
     h3{
-        font-size: 14px;
-        font-weight: 600;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 43px;
+        margin: 0;
     }
     h4{
         font-size: 12px;
-        font-weight: 400;
+        font-weight: 800;
+        margin: 0;
     }
     p{
         font-size: 12px;
-        font-weight: 600; 
+        font-weight: 400;
+    
+        line-height: 14px;
+        letter-spacing: 1.5px;
+    
+        color: #666666; 
+        margin: 0;
     }
     span{
-        font-size: 10px;
-        font-weight: 600; 
-    }
-
-
-    /* Стилизация шапки */
-    .nav-header__wrap{
-        display: none;
-    }
-    .massage-tablet{
-        display: none;
-    }
-    .header-burger_menu{
-        display: block;
-        cursor: pointer;
+        font-size: 24px;
+        font-weight: 400; 
+        margin: 0;
     }
 }

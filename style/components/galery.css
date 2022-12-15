@@ -1,0 +1,36 @@
+.galery__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 0;
+
+    flex-wrap: wrap;
+}
+
+.galery-image__wrap{
+    width: 50%;
+}
+.galery-content__wrap{
+    width: 40%;
+}
+
+.galery-content-title__wrap p{
+    margin: 40px 0
+}
+
+
+.galery-content-control__wrap{
+    display: flex;
+
+}
+.galery-button-back{
+    margin-right: 40px;
+}
+.galery-button{
+    transition: .5s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.galery-button:hover{
+    background-color: var(--hover-color);
+}

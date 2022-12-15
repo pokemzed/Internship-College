@@ -1,9 +1,11 @@
 .form{
-    width: 100%;
-    background-color: var(--back-color);
+    margin: 100px 0;
 }
-.form__wrapper{
-    padding: 50px 0;
+.form-title{
+    margin-bottom: 30px;
+}
+.form-title h3{
+    color: var(--title-elements-color);
 }
 
 form{
@@ -16,7 +18,6 @@ form select{
     border: 2px solid #DADADA;
     background-color: inherit;
     border-radius: 10px;
-    
 }
 .form-element{
     width: 100%;
@@ -39,20 +40,18 @@ form select{
 } */
 
 #button-form{
-    border: none;
-    background-color: var(--elements-color);
-    padding: 15px 250px;
     margin-top: 50px;
-
-    display: flex;
-    align-items: center;
-
+    border: none;
+    border-radius: 32px;
+    padding: 20px 200px;
+    font-weight: 800;
     color: #fff;
-    border-radius: 20px 0 20px 0;
 
     cursor: pointer;
-    transition: .3s;
+    transition: .5s;
+
+    background-color: var(--title-elements-color);
 }
 #button-form:hover{
-    background-color: #4040E4;
+    background-color: var(--hover-color);
 }
